@@ -1,0 +1,83 @@
+.bb-tribe-events-views-v2 .tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+  padding-top: 0;
+}
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-header {
+  background: transparent;
+}
+.bb-tribe-events-views-v2 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__input-group,
+.bb-tribe-events-views-v2 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-events-bar__search-filters-container,
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-c-search__input-control--keyword .tribe-events-c-search__input {
+  border-radius: 4px;
+}
+.bb-tribe-events-views-v2 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-events-bar--border {
+  border-radius: 4px;
+  border: 1px solid #E7E9EC;
+}
+.bb-tribe-events-views-v2 .tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month {
+  background: #fff;
+}
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-calendar-month__header-row {
+  border-color: #E4E4E4;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+}
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-calendar-month__header-column {
+  border-color: #E4E4E4;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  padding: 0;
+}
+.bb-tribe-events-views-v2 .tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__header-column-title {
+  line-height: 1;
+  padding: 12px 0;
+  text-align: center;
+}
+.bb-tribe-events-views-v2 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__nav {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.bb-tribe-events-views-v2 .tribe-common--breakpoint-medium.tribe-common .tribe-common-h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-c-top-bar__datepicker-button:hover {
+  box-shadow: none;
+  opacity: 1;
+}
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-c-top-bar__nav-list-item {
+  margin-right: 12px;
+  padding-left: 0;
+}
+.bb-tribe-events-views-v2 .tribe-common--breakpoint-medium.tribe-common .tribe-common-h4 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: left;
+}
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-c-ical__link:before {
+  display: none;
+}
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-c-search__input-control--keyword .tribe-events-c-search__input:focus {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 18.711l-6.044-6.044a7.782 7.782 0 0 0 1.688-4.845c0-2.089-.822-4.044-2.288-5.533C11.866.822 9.91 0 7.822 0S3.778.822 2.29 2.289A7.801 7.801 0 0 0 0 7.822c0 2.09.822 4.045 2.289 5.534a7.801 7.801 0 0 0 5.533 2.288c1.778 0 3.467-.6 4.845-1.688L18.71 20 20 18.711zM3.578 12.067c-2.334-2.334-2.334-6.156 0-8.49a5.968 5.968 0 0 1 4.244-1.755c1.6 0 3.111.622 4.245 1.756 2.333 2.333 2.333 6.155 0 8.489a5.968 5.968 0 0 1-4.245 1.755c-1.6 0-3.11-.622-4.244-1.755z' fill='%235D5D5D'/%3E%3C/svg%3E");
+}
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-c-nav__prev:disabled,
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-c-nav__next:disabled {
+  box-shadow: none;
+}
+.bb-tribe-events-views-v2 .tribe-events .tribe-events-l-container {
+  padding-top: 0;
+}
+
+.site-content-grid > .tribe-events {
+  padding-top: 1.875rem;
+}
+
+@media screen and (max-width: 620px) {
+  .tribe-events .tribe-events-header {
+    margin: 0 0 30px;
+    background: transparent;
+    padding: 0;
+  }
+}

@@ -1,0 +1,10 @@
+﻿@font-face {
+	font-family: mahboubeh_mehravar;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/mahboubeh/eot/mahboubeh_mehravar.eot');
+	src: url('../fonts/mahboubeh/eot/mahboubeh_mehravar.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/mahboubeh/woff2/mahboubeh_mehravar.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/mahboubeh/woff/mahboubeh_mehravar.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/mahboubeh/ttf/mahboubeh_mehravar.ttf') format('truetype');
+}

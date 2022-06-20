@@ -1,0 +1,236 @@
+/*
+Theme Name: BuddyBoss Theme
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+caption,
+th,
+td {
+    text-align: right;
+}
+
+/* Fixed Pagination Issue */
+html .pagination .pagination-links li a,
+html .pagination .pagination-links li span,
+html body.bb-marketplace .woocommerce nav.woocommerce-pagination ul li a,
+html body.bb-marketplace .woocommerce nav.woocommerce-pagination ul li span,
+html body.bb-marketplace.woocommerce nav.woocommerce-pagination ul li a,
+html body.bb-marketplace.woocommerce nav.woocommerce-pagination ul li span {
+    margin-left: 0;
+}
+
+.pagination .pagination-links li.current+li a,
+.pagination .pagination-links li:focus+li a,
+.pagination .pagination-links li:hover+li a,
+body.bb-marketplace .woocommerce nav.woocommerce-pagination ul li.current+li a,
+body.bb-marketplace .woocommerce nav.woocommerce-pagination ul li:focus+li a,
+body.bb-marketplace .woocommerce nav.woocommerce-pagination ul li:hover+li a,
+body.bb-marketplace.woocommerce nav.woocommerce-pagination ul li.current+li a,
+body.bb-marketplace.woocommerce nav.woocommerce-pagination ul li:focus+li a,
+body.bb-marketplace.woocommerce nav.woocommerce-pagination ul li:hover+li a {
+    border-right-color: #e1e1e1;
+}
+
+.main-navigation li ul li.menu-item-has-children > a:after {
+    content: "\f104";
+}
+
+#bbpress-forums ul.bbp-threaded-replies:before {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+/*
+ * Brackets displays wrongly for right to left display style
+ * http://stackoverflow.com/questions/5741522/brackets-displays-wrongly-for-right-to-left-display-style
+ */
+.woocommerce ul.products li.product h3:after {
+    content: '\200E‎';
+}
+
+.bb-slider-container .slidePrev:before, .bb-slider-container .slideNext:before {
+    content: "\f105";
+}
+
+.bb-slider-container .slideNext:before {
+    content: "\f104";
+}
+
+#main ul.horiz-gallery .see-more,
+a.page-numbers[title="←"],
+a.page-numbers[title="→"],
+a.next.page-numbers,
+a.prev.page-numbers {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.woocommerce-pagination a.next.page-numbers,
+.woocommerce-pagination a.prev.page-numbers {
+    -webkit-transform: none;
+    transform: none;
+}
+
+#posts-carousel .arrows a:before {
+    display: inline-block;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.fancybox-overlay .fancybox-skin .fancybox-close {
+    right: auto;
+}
+
+body .bb-global-search-ac.ui-autocomplete {
+    left: auto !important;
+    right: 23px !important;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+#posts-carousel li {
+    float: left;
+}
+
+@media screen and (min-width: 769px) {
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        float: right;
+        margin: 0 0 2.992em 3.8%;
+    }
+
+    .woocommerce ul.products li.last,
+    .woocommerce-page ul.products li.last {
+        margin-left: 0;
+    }
+}
+
+body.rtl [data-balloon][data-balloon-pos='left']:before {
+    transform: translate(-10px, -50%) rotate(180deg);
+    margin-right: -31px;
+}
+
+body.rtl [data-balloon][data-balloon-pos='left']:hover:before,
+[data-balloon][data-balloon-pos='left'][data-balloon-visible]:before {
+    transform: translate(0, -50%) rotate(180deg);
+    margin-right: -11px;
+}
+
+body.rtl [data-balloon][data-balloon-pos='right']:before {
+    transform: translate(10px, -50%) rotate(180deg);
+    margin-left: -31px;
+}
+
+body.rtl [data-balloon][data-balloon-pos='right']:hover:before,
+[data-balloon][data-balloon-pos='right'][data-balloon-visible]:before {
+    transform: translate(0, -50%) rotate(180deg);
+    margin-left: -11px;
+}
+/*ariawp*/
+span.mention-name, span.user-mention{
+    direction: ltr;
+    display: inline-block;
+}
+.more-block a.count-more .bb-icon-angle-right{
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+}
+.woocommerce nav.woocommerce-pagination ul li a.next, .woocommerce nav.woocommerce-pagination ul li a.prev{
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+}
+.filter-options select.select-text{
+    padding: 8px 0 8px 10px;
+    font-size: 15px;
+}
+.bp_zoom_countdown{
+    direction: ltr;
+}
+[data-bp-tooltip][data-bp-tooltip-pos=left]:before{
+    transform: translate(-10px,-50%) rotate(180deg);
+}
+[data-bp-tooltip][data-bp-tooltip-pos=left]:hover:before, [data-bp-tooltip][data-bp-tooltip-pos=left][data-bp-tooltip-visible]:before{
+    transform: translate(0,-50%) rotate(180deg);
+}
+.notification-footer .bb-icon-angle-right {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+.CodeMirror{
+    text-align: left;
+    direction: ltr;
+}
+.CodeMirror-linenumber{
+    text-align: right;
+    padding: 0 3px 0 5px;
+}
+.CodeMirror-scroll{
+    margin-right: -30px;
+    margin-left: 0;
+}
+.CodeMirror-sizer {
+    position: relative;
+    border-right: 30px solid transparent;
+    border-left: 0;
+}
+.CodeMirror-gutters{
+    left: 0;
+    right: auto;
+}
+.CodeMirror-gutters {
+    border-right: 1px solid #ddd;
+    border-left: 0;
+}
+.video-js{
+	font-family: inherit;
+}
+.video-js [data-balloon][data-balloon-pos=up]:after{
+	left: 50%;
+	right: auto;
+	-webkit-transform: translate(-50%, 10px);
+    -ms-transform: translate(-50%, 10px);
+    transform: translate(-50%, 10px);
+}
+.video-js [data-balloon][data-balloon-pos=up]:hover:after, .video-js [data-balloon][data-balloon-pos=up][data-balloon-visible]:after {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.bb-activity-video-elem .video-js .vjs-control-bar .vjs-play-control:after, .bb-media-section .video-js .vjs-control-bar .vjs-play-control:after, .bb-video-thumb .video-js .vjs-control-bar .vjs-play-control:after {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.bb-activity-video-elem .video-js .vjs-control-bar .enlarge_button:after, .bb-media-section .video-js .vjs-control-bar .enlarge_button:after, .bb-video-thumb .video-js .vjs-control-bar .enlarge_button:after{
+	left: 0;
+}
+.slick-slider .slick-slide{
+    direction: rtl;
+}
+.sfwd-course-nav .learndash_next_prev_link{
+    direction: ltr;
+}
+.bb-dash-grid__ico i.bb-icon-angle-right{
+	transform: rotate(180deg);
+}
+.member-status{
+    right: 2px;
+    left: auto;
+}
+.bb-members-list__item .member-status.online{
+    margin-left: auto;
+    margin-right: 0;
+}

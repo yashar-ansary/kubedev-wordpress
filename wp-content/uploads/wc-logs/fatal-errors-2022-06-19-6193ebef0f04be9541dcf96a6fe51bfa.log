@@ -1,0 +1,4 @@
+2022-06-19T18:04:38+00:00 CRITICAL Cannot redeclare filter_created_pages() (previously declared in C:\xampp\htdocs\ya\wp-content\plugins\woocommerce\includes\wc-update-functions.php:2291) در C:\xampp\htdocs\ya\wp-content\plugins\woocommerce\includes\wc-update-functions.php روی خط 2291
+
+2022-06-19T18:04:48+00:00 CRITICAL Cannot redeclare filter_created_pages() (previously declared in C:\xampp\htdocs\ya\wp-content\plugins\woocommerce\includes\wc-update-functions.php:2291) در C:\xampp\htdocs\ya\wp-content\plugins\woocommerce\includes\wc-update-functions.php روی خط 2291
+

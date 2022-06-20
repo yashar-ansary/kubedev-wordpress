@@ -1,0 +1,25 @@
+/*
+Developer: AriaWP
+URL: https://ariawp.com
+*/
+
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Droid/DroidNaskh-Regular.eot);
+  src: url(../fonts/Droid/DroidNaskh-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Droid/DroidNaskh-Regular.woff2) format('woff2'),
+       url(../fonts/Droid/DroidNaskh-Regular.woff) format('woff'),
+       url(../fonts/Droid/DroidNaskh-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Droid/DroidNaskh-Bold.eot);
+  src: url(../fonts/Droid/DroidNaskh-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Droid/DroidNaskh-Bold.woff2) format('woff2'),
+       url(../fonts/Droid/DroidNaskh-Bold.woff) format('woff'),
+       url(../fonts/Droid/DroidNaskh-Bold.ttf) format('truetype');
+}
